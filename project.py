@@ -15,6 +15,12 @@ from datamanager import DataManager
 
 
 def main():
+    """Loops program until user exits
+
+    :return: None
+    """
+
+    print("---Welcome to your programming journal---")
 
     while True:
         display_menu()
@@ -22,8 +28,7 @@ def main():
 
 
 def display_menu():
-    """
-    Display menu of user choices
+    """Display menu of user choices
 
     :return: None
     """
@@ -41,8 +46,7 @@ def display_menu():
 
 
 def get_user_choice():
-    """
-    Get user's entry from menu choices and call assigned functions.
+    """Get user's entry from menu choices and call assigned functions
     :return: None
     """
 
@@ -67,6 +71,10 @@ def get_user_choice():
 
 
 def get_quote():
+    """Load a funny quote about programming from a JSON file
+
+    :return: dict of quote: author
+    """
 
     with open('quotes.json') as fin:
         data = json.load(fin)
@@ -76,6 +84,11 @@ def get_quote():
 
 
 def display_entries(entries):
+    """Display entries from journal database
+
+    :param entries: list of dates, journal entries
+    :return: None
+    """
 
     if entries:
         for row in entries:
@@ -88,5 +101,4 @@ def display_entries(entries):
 
 if __name__ == "__main__":
     dm = DataManager()
-    print("---Welcome to your programming journal---")
     main()
