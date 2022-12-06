@@ -3,7 +3,6 @@ Project Title:  Programming Journal
 Author: Shawn Norris
 Location: Carrollton, Missouri, USA
 
-Quotes provided by https://github.com/fortrabbit/quotes/blob/master/quotes.json under WTFPL license
 """
 
 import json
@@ -15,7 +14,7 @@ from datamanager import DataManager
 
 
 def main():
-    """Loops program until user exits
+    """Loop program until user exits
 
     :return: None
     """
@@ -51,7 +50,7 @@ def get_user_choice():
     """
 
     user_input = input("Make your choice: ")
-    os.system('clear')
+    # os.system('clear')
 
     match user_input:
         case "1":
