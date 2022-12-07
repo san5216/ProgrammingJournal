@@ -1,14 +1,14 @@
 """
 Project Title:  Programming Journal
-Author: Shawn Norris
-Location: Carrollton, Missouri, USA
+Author: Shawn
+Location: Kansas City, Missouri, USA
 
 """
 
 import json
 import random
 import sys
-import os
+# import os
 from datetime import date
 from datamanager import DataManager
 
@@ -19,7 +19,7 @@ def main():
     :return: None
     """
 
-    print("---Welcome to your programming journal---")
+    print("\n---Welcome to your programming journal---")
 
     while True:
         display_menu()
