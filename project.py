@@ -67,6 +67,9 @@ def get_user_choice():
             quote = get_quote()
             sys.exit(f"\n{quote['text']}\n"
                      f"--{quote['author']}\n\n")
+        case _:
+            print("Please enter a valid selection.")
+            return 0
 
 
 def get_quote():
@@ -88,7 +91,8 @@ def display_entries(entries):
     :param entries: list of dates, journal entries
     :return: None
     """
-
+    print(entries)
+    print(type(entries))
     if entries:
         for row in entries:
             print(f"\n{row[0]}\n")
