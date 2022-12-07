@@ -51,7 +51,7 @@ class DataManager:
         """Search journal entries for query string
 
         :param query: query string
-        :return: list of dates and entries containing query string
+        :return: list of date objects and entries containing query string
         """
 
         with self.conn:
