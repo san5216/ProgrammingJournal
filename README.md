@@ -1,5 +1,5 @@
 # CLI Programming journal
-#### Video Demo:  <URL HERE>
+#### Video Demo:  https://youtu.be/UGgwpCNgWIs
 
 #### Description
 
